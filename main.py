@@ -47,9 +47,4 @@ def infos(user):
         else:
             exit()
 
-
-
-
-
-
 infos(input("username: "))
