@@ -1,4 +1,4 @@
 # Ochess
 small script to get information about a chess.com user
 # Requirements
-json and request modules
+json and requests
