@@ -21,8 +21,33 @@ def infos(user):
         except(KeyError):
             infos_gets.append(info[i])
     
+
     if infos_gets == info:
         print("user not found")
+    else:
+        choice = input("save as txt ? [y/N]: ")
+        if choice == 'y':
+            file = input("file name: ")
+            try:
+                file = open(file, "x")
+            except(FileExistsError):
+                print("file already exist")
+                exit()
+                
+            for i in range(len(info)):
+                try:
+                    print(data[info[i]])
+                    file.write((info[int(i)]))
+                    file.write(": ")
+                    file.write(str(data[info[i]]))
+                    file.write("\n")
+                except(KeyError):
+                    pass
+                
+        else:
+            exit()
+
+
 
 
 
