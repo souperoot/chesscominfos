@@ -35,8 +35,6 @@ def infos(user):
                 exit()
                 
             for i in range(len(info)):
-                try:
-                    print(data[info[i]])
                     file.write((info[int(i)]))
                     file.write(": ")
                     file.write(str(data[info[i]]))
